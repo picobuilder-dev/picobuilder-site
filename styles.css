@@ -72,8 +72,8 @@ a{text-decoration:none;color:inherit;}
 .hero{
   padding:8rem 0 5rem;
   background:
-    linear-gradient(rgba(15,31,53,.8), rgba(42,90,143,.8)),
-    url('hero.jpg') center/cover no-repeat;
+      linear-gradient(rgba(120, 0, 0, 0.397), rgba(180, 0, 0, 0.377)),
+    url('images/hero.jpg') center/cover no-repeat;
   color:#fff;
   text-align:center;
 }
@@ -82,6 +82,7 @@ a{text-decoration:none;color:inherit;}
   font-size:2.6rem;
   line-height:1.2;
   margin-bottom:1rem;
+color:#4f7fb3;
 }
 
 .hero p{
@@ -131,6 +132,32 @@ a{text-decoration:none;color:inherit;}
   color:#475569;
   margin-bottom:2.5rem;
 }
+/* === About Section Improvements === */
+
+.about-container{
+  max-width:900px;
+  margin:0 auto;
+}
+
+#about{
+  padding-top:7rem;
+}
+
+.about-text p{
+  margin-bottom:1.25rem;
+  color:var(--gray-600);
+  line-height:1.8;
+}
+/* ================= ABOUT FLOAT IMAGE ================= */
+
+.about-float-img{
+  float:right;
+  width:340px;
+  max-width:45%;
+  margin:0 0 1.5rem 2rem;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
 
 /* ================= SERVICES ================= */
 .services-grid{
@@ -163,7 +190,15 @@ a{text-decoration:none;color:inherit;}
 @media(max-width:768px){
   .hero h1{font-size:1.8rem;}
   .nav-links{display:none;}
+  .about-float-img{
+  float:none;
+  display:block;
+  width:100%;
+  max-width:100%;
+  margin:2rem auto;
 }
+}
+
 /* ================= WHATSAPP ================= */
 
 .btn-whatsapp{
