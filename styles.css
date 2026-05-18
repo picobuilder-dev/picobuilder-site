@@ -70,28 +70,53 @@ a{text-decoration:none;color:inherit;}
 
 /* ================= HERO ================= */
 .hero{
-  padding:8rem 0 5rem;
+  padding:9rem 0 7rem;
   background:
       linear-gradient(rgba(120, 0, 0, 0.397), rgba(180, 0, 0, 0.377)),
     url('images/hero.jpg') center/cover no-repeat;
   color:#fff;
-  text-align:center;
+  text-align:left;
 }
 
 .hero h1{
-  font-size:2.6rem;
-  line-height:1.2;
-  margin-bottom:1rem;
-color:#4f7fb3;
+  font-size:4.4rem;
+  line-height:1.02;
+  margin-bottom:2rem;
+  color:#78aee8;
+  font-weight:700;
+  letter-spacing:-2px;
+  max-width:620px;
+
 }
 
 .hero p{
-  opacity:.9;
+  opacity:.95;
   margin-bottom:1rem;
+  max-width:520px;
+  
+
+}
+.hero-subheadline{
+  font-size:1.6rem;
+  color:#ffffff;
+  font-weight:500;
+  margin-bottom:.75rem;
 }
 
+.hero-supporting{
+  font-size:1.2rem;
+  color:rgba(255,255,255,.92);
+}
 .hero-actions{
   margin-top:2rem;
+  display:flex;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+.hero-content{
+ max-width:620px;
+  margin-left:0;
+  padding-left:4rem;
 }
 
 /* ================= BUTTONS ================= */
@@ -227,7 +252,15 @@ color:#4f7fb3;
   width:100%;
   max-width:100%;
   margin:2rem auto;
+
+  .hero-content{
+  padding-left:1.25rem;
 }
+
+.hero h1{
+  font-size:2.6rem;
+  letter-spacing:-1px;
+
 }
 
 /* ================= WHATSAPP ================= */
