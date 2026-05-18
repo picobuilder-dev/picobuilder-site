@@ -141,8 +141,8 @@ a{text-decoration:none;color:inherit;}
   padding:5rem 0;
 }
 
-.section-alt{
-  background:#f8fafc;
+.process-section{
+  background:#eef5fc;
 }
 
 .section-title{
@@ -183,7 +183,49 @@ a{text-decoration:none;color:inherit;}
   border-radius:12px;
   box-shadow:0 10px 25px rgba(0,0,0,0.12);
 }
+/* ================= HOW IT WORKS ================= */
 
+.process-timeline{
+  max-width:850px;
+  margin:4rem auto 0;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+}
+
+.process-step{
+  display:flex;
+  gap:1.5rem;
+  align-items:flex-start;
+  padding-bottom:2rem;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+}
+
+.process-number{
+  width:52px;
+  height:52px;
+  min-width:52px;
+  border-radius:50%;
+  background:#1e3a5f;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:1.1rem;
+}
+
+.process-content h3{
+  font-size:1.2rem;
+  margin-bottom:.5rem;
+  color:#1e3a5f;
+}
+
+.process-content p{
+  color:var(--gray-600);
+  line-height:1.7;
+  max-width:680px;
+}
 /* ================= WHY PICOBUILDER ================= */
 
 .why-pico-container{
@@ -261,6 +303,20 @@ a{text-decoration:none;color:inherit;}
   font-size:2.6rem;
   letter-spacing:-1px;
 
+  .process-step{
+  gap:1rem;
+}
+
+.process-number{
+  width:42px;
+  height:42px;
+  min-width:42px;
+  font-size:1rem;
+}
+
+.process-content h3{
+  font-size:1.05rem;
+}
 }
 
 /* ================= WHATSAPP ================= */
